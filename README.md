@@ -2,7 +2,7 @@
 
 ## Что это
 
-Новостной сайт Север Пресс.
+Новостной сайт.
 
 ## Архитектура проекта
 
@@ -57,13 +57,6 @@ git checkout development && git checkout -b feature/<featurename>
 ```shell
 git push
 ```
-
-создаем PR в
-<https://git.contentline.ru/CONTENT_LINE/sever_press>
-
-## Владельцы репозитория
-
-[Alexey Karabanov](https://git.contentline.ru/akarabanov)
 
 ## Дополнительные материалы
 
