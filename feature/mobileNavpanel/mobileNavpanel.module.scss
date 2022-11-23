@@ -1,0 +1,43 @@
+.MobileNavpanel {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: var(--color-common-white);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 8px 0;
+  box-shadow: 0px 0px 20px 0px #00000029;
+  @media (min-width: 500px) {
+    display: none;
+  }
+  .subscribeMenu {
+    position: absolute;
+    padding: 16px;
+    left: 0;
+    right: 0;
+    bottom: -263px;
+    z-index: 6;
+    background-color: var(--color-common-white);
+    box-shadow: 0px 0px 20px 0px #00000029;
+    transition: bottom 0.5s;
+    &.active {
+      bottom: 0;
+    }
+  }
+  .social {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .item {
+      position: relative;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      path {
+        fill: var(--color-common-black);
+      }
+    }
+  }
+}

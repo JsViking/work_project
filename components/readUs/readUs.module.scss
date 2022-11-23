@@ -1,0 +1,24 @@
+.ReadUs {
+  position: relative;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+  .wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    svg {
+      path {
+        fill: var(--color-common-black);
+      }
+    }
+  }
+  .label {
+    position: relative;
+    width: 100%;
+    @media (min-width: 1000px) {
+      width: initial;
+    }
+  }
+}

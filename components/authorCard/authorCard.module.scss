@@ -1,0 +1,31 @@
+.AuthorCard {
+  position: relative;
+  display: flex;
+  gap: 24px;
+  .avatar {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    @media (min-width: 1000px) {
+      width: 128px;
+      height: 128px;
+    }
+    img {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .title {
+    @media (min-width: 1000px) {
+      font-size: 28px;
+    }
+  }
+  .info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

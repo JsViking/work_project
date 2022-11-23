@@ -1,0 +1,13 @@
+.Authors {
+  position: relative;
+  display: flex;
+  gap: 16px;
+  padding-bottom: 16px;
+  margin-top: 73px;
+  border-bottom: 1px var(--color-grey-divider) solid;
+  .label {
+    position: relative;
+    padding-right: 16px;
+    border-right: 1px var(--color-grey-divider) solid;
+  }
+}

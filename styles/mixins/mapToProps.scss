@@ -1,0 +1,15 @@
+@mixin map-to-props($map) {
+  @if type-of($map) == map {
+    @each $prop, $value in $map {
+      @if type-of($value) != map {
+        @if inspect($prop) == 'description' {
+          /* #{inspect($value)} */
+        } @else {
+          #{inspect($prop)}: #{inspect($value)};
+        }
+      } @else {
+        @include map-to-props($value);
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.Vote {
+  position: relative;
+  display: flex;
+  gap: 16px;
+  &.vertical {
+    flex-direction: column;
+  }
+  .block {
+    position: relative;
+    display: flex;
+    gap: 4px;
+    &.vertical {
+      flex-direction: column;
+      .item {
+        &.count {
+          width: 44px;
+          height: 44px;
+        }
+        &.button {
+          width: 44px;
+          height: 24px;
+        }
+      }
+    }
+  }
+  .item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 30px;
+    border-radius: 4px;
+    &.active {
+      background-color: var(--color-main-light-blue) !important;
+    }
+    &.count {
+      background-color: var(--color-main-light-grey);
+    }
+    &.button {
+      border: 1px var(--color-main-light-grey) solid;
+      cursor: pointer;
+    }
+  }
+}

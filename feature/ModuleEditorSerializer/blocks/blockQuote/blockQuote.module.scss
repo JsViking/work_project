@@ -1,0 +1,29 @@
+.BlockQuote {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  border: none;
+  background-color: var(--color-main-light-grey);
+  padding: 40px 16px 24px 16px;
+  @media (min-width: 1000px) {
+    padding: 40px;
+  }
+  .blockQuoteOwner {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .icon {
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+  .blockQuoteText {
+    position: relative;
+    margin-top: 42px;
+    margin-bottom: 24px;
+  }
+  &.aligmentBlock {
+    width: 45%;
+  }
+}

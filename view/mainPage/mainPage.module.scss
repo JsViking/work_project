@@ -1,0 +1,98 @@
+.MainPage {
+  position: relative;
+
+  @mixin cardGrid {
+    position: relative;
+    display: grid;
+    gap: 40px;
+  }
+  .tagListDesktop {
+    display: none;
+    padding: 24px 0px 48px;
+    @media (min-width: 1000px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .tagListMobile {
+    display: flex;
+    padding: 24px 16px 0;
+    justify-content: flex-start;
+    overflow: auto;
+    p {
+      white-space: nowrap;
+    }
+    @media (min-width: 1000px) {
+      display: none;
+    }
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .topBlock {
+    position: relative;
+    display: grid;
+    grid-template-columns: 100%;
+    @media (min-width: 1000px) {
+      height: 540px;
+      gap: 16px;
+      grid-template-columns: 50% 1fr 1fr;
+    }
+  }
+  .centerBlock {
+    position: relative;
+    margin: 96px 16px 0 16px;
+    @media (min-width: 1000px) {
+      margin: 96px auto 0 auto;
+      max-width: 1200px;
+    }
+  }
+  .twoColumns {
+    @include cardGrid;
+    @media (min-width: 1000px) {
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+  }
+  .twoQuoteColumns {
+    @include cardGrid;
+    margin-top: 48px;
+    @media (min-width: 1000px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .quoteColumn {
+    @include cardGrid;
+    height: fit-content;
+  }
+  .mainBlockNewsList {
+    @include cardGrid;
+    @media (min-width: 1000px) {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 24px;
+    }
+  }
+  .mainBlockNewsListColumn {
+    @include cardGrid;
+    height: fit-content;
+    @media (min-width: 1000px) {
+      border-right: 1px var(--color-grey-divider) solid;
+      padding-right: 24px;
+      gap: 24px;
+    }
+  }
+  .horizontalArticleBlock {
+    @include cardGrid;
+    @media (min-width: 1000px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  .dividerHorizontal {
+    position: relative;
+    width: 100%;
+    height: 0;
+    border-bottom: 1px var(--color-grey-divider) solid;
+  }
+}

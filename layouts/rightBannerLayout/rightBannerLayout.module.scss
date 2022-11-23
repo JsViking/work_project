@@ -1,0 +1,21 @@
+.RightBannerLayout {
+  position: relative;
+  display: grid;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 48px 16px 200px 16px;
+  @media (min-width: 1200px) {
+    margin: 48px auto 200px auto;
+    grid-template-columns: 1fr 240px;
+  }
+  .content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    @media (min-width: 1000px) {
+      padding-right: 20px;
+      border-right: 1px var(--color-grey-divider) solid;
+    }
+  }
+}

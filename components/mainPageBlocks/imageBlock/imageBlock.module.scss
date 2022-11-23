@@ -1,0 +1,18 @@
+.ImageBlock {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  min-height: 448px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .contentWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 24px 16px;
+  }
+}

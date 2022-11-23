@@ -1,0 +1,19 @@
+.Sharing {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  &.vertical {
+    flex-direction: column;
+    svg {
+      path {
+        fill: var(--color-font-grey);
+      }
+    }
+  }
+  svg {
+    path {
+      fill: var(--color-common-black);
+    }
+  }
+}

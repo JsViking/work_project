@@ -1,0 +1,23 @@
+.AuthorArticle {
+  position: relative;
+  .wrapImage {
+    position: relative;
+    aspect-ratio: 16/9;
+  }
+  .warapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .moreButton {
+    margin-top: 8px;
+  }
+}

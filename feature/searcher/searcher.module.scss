@@ -1,0 +1,47 @@
+.Searcher {
+  position: relative;
+  .panel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 16px;
+    @media (min-width: 1000px) {
+      flex-direction: row;
+    }
+    div {
+      margin: 0;
+    }
+    input {
+      position: relative;
+      padding: 19px 48px;
+      background-color: var(--color-main-light-grey);
+      border: 1px var(--color-grey-divider);
+      border-radius: 4px;
+      flex: 1 1;
+      width: 100%;
+      box-sizing: border-box;
+      &::placeholder {
+        color: var(--color-font-grey);
+      }
+    }
+    .button {
+      position: relative;
+      min-width: 210px;
+      cursor: pointer;
+    }
+    .wrapper {
+      position: relative;
+      width: 100%;
+      .icon {
+        position: absolute;
+        top: 14px;
+        left: 10px;
+        z-index: 1;
+        path {
+          fill: var(--color-common-black);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+version: '3.9'
+services:
+  frontend:
+    container_name: ${FRONTEND_IMAGE_NAME}
+    image: ${DOCKER_REGISTRY}/${PROJECT_REGISTRY_NAMESPACE}/${FRONTEND_IMAGE_NAME}:${IMAGE_TAG}
+    build:
+      context: .
+      args:
+        - NEXT_PUBLIC_SITE_URL=${NEXT_PUBLIC_SITE_URL}
+        - NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL}
+    environment:
+      - NEXT_PUBLIC_SITE_URL=${NEXT_PUBLIC_SITE_URL}
+      - NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL}
+    ports:
+      - 127.0.0.1:${HOST_PORT}:3000

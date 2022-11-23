@@ -1,0 +1,8 @@
+.ArticleTool {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  &.vertical {
+    flex-direction: column;
+  }
+}

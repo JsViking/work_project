@@ -1,0 +1,17 @@
+.NewsBlock {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  .image {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  .titleBlock {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}

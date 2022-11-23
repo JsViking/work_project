@@ -1,0 +1,27 @@
+.RegionsBlock {
+  position: relative;
+  .content {
+    position: relative;
+    margin-top: 48px;
+    display: flex;
+    gap: 130px;
+    @media (min-width: 1000px) {
+      height: 312px;
+    }
+  }
+  .map {
+    position: absolute;
+    right: 0;
+    @media (min-width: 1000px) {
+      position: relative;
+    }
+  }
+  .list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 24px;
+    flex: 1 1;
+  }
+}

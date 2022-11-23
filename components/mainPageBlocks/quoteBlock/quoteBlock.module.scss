@@ -1,0 +1,46 @@
+.QuoteBlock {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  &.big {
+    border: 4px var(--color-main-blue) solid;
+    padding: 16px 16px 0 16px;
+    @media (min-width: 1000px) {
+      padding: 48px 48px 0 48px;
+    }
+  }
+  &.small {
+    background-color: var(--color-main-light-grey);
+    padding: 24px 24px 0 24px;
+  }
+  .top {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .bottom {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 8px;
+    .avatar {
+      position: relative;
+      width: 128px;
+      @media (min-width: 1000px) {
+        &.big {
+          width: 256px;
+        }
+      }
+    }
+    svg {
+      margin-bottom: 24px;
+    }
+  }
+  .autor {
+    position: relative;
+    margin-bottom: 24px;
+  }
+}

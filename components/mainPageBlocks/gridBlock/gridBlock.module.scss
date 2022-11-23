@@ -1,0 +1,22 @@
+.GridBlock {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin-bottom: 96px;
+  .horizontalArticleBlock {
+    position: relative;
+    display: grid;
+    gap: 40px;
+    @media (min-width: 1000px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  .button {
+    @media (min-width: 1000px) {
+      width: fit-content;
+      margin: 0 auto;
+      padding: 16px 80px;
+    }
+  }
+}

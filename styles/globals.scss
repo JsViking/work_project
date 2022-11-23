@@ -1,0 +1,33 @@
+@import './theme/light.module.scss';
+@import 'styles/reset';
+@import 'styles/normalize';
+@import 'styles/fonts';
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font: 1rem/140% 'Inter', sans-serif;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--color-common-black);
+  background-color: var(--color-common-white);
+}
+html {
+  height: auto;
+}
+
+#__next {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+}
+
+:root {
+  @each $key, $value in $lightTheme {
+    #{unquote($key)}: $value;
+  }
+}

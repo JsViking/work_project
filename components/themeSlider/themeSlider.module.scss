@@ -1,0 +1,84 @@
+.ThemeSlider {
+  position: relative;
+  width: 100%;
+  background-color: var(--color-main-light-grey);
+  padding: 48px 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  .swiperWrapper {
+    position: relative;
+    @media (min-width: 1150px) {
+      margin: 0 auto;
+      min-width: 1150px;
+      @media (min-width: 1650px) {
+        min-width: 1650px;
+      }
+    }
+  }
+
+  .wrapper {
+    position: relative;
+    height: 203px;
+    max-width: 100%;
+    @media (min-width: 1150px) {
+      max-width: 1000px;
+      @media (min-width: 1650px) {
+        max-width: 1500px;
+      }
+    }
+  }
+  .slideWrapper {
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+  }
+  .slide {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background-size: cover !important;
+  }
+  .title {
+    position: absolute;
+    left: 24px;
+    bottom: 24px;
+  }
+}
+
+.counter {
+  position: absolute;
+  right: calc(50% - 18px);
+  bottom: -45px;
+  @media (min-width: 1000px) {
+    display: none;
+  }
+}
+
+.navigation {
+  position: absolute;
+  bottom: -56px;
+  z-index: 1;
+  cursor: pointer;
+  @media (min-width: 1000px) {
+    top: calc(50% - 20px);
+  }
+}
+.navigationLeft {
+  left: 0;
+}
+.navigationRight {
+  right: 0;
+  transform: rotate(180deg);
+}
+
+.button {
+  @media (min-width: 1000px) {
+    width: fit-content;
+    padding: 16px 80px;
+    margin: 0 auto;
+  }
+}

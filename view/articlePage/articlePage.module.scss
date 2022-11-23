@@ -1,0 +1,114 @@
+.ArticlePage {
+  position: relative;
+  max-width: 1200px;
+  margin: 48px 16px 200px 16px;
+  @media (min-width: 1200px) {
+    margin: 48px auto 200px auto;
+  }
+  .article {
+    display: flex;
+    flex-direction: column;
+    gap: 73px;
+    @media (min-width: 1200px) {
+      gap: 96px;
+    }
+  }
+  .wrapper {
+    position: relative;
+    display: grid;
+    gap: 20px;
+    @media (min-width: 1200px) {
+      grid-template-columns: 1fr 373px;
+    }
+  }
+  .body {
+    position: relative;
+    @media (min-width: 1200px) {
+      padding-right: 40px;
+      border-right: 1px var(--color-grey-divider) solid;
+    }
+  }
+  .title {
+    position: relative;
+    margin-top: 8px;
+    @media (min-width: 1200px) {
+      font-size: 28px;
+    }
+  }
+  .mb16 {
+    position: relative;
+    margin-top: 16px;
+  }
+  .date {
+    position: relative;
+    display: flex;
+    gap: 16px;
+    margin-top: 32px;
+    .updatedDate {
+      display: none;
+      position: relative;
+      border-left: 1px var(--color-grey-divider) solid;
+      padding-left: 16px;
+      @media (min-width: 1000px) {
+        display: block;
+      }
+    }
+  }
+  .content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .tags {
+    position: relative;
+    display: flex;
+    gap: 16px;
+    margin-top: 32px;
+    align-items: baseline;
+  }
+  .relatedNews {
+    position: relative;
+    .news {
+      position: relative;
+      margin-top: 40px;
+      display: grid;
+      gap: 20px;
+      @media (min-width: 1000px) {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    .divider {
+      border-right: 1px var(--color-grey-divider) solid;
+      @media (min-width: 1000px) {
+        border: none;
+      }
+    }
+  }
+  .lastNews {
+    display: none;
+    @media (min-width: 1000px) {
+      display: block;
+    }
+  }
+  .tagLabel {
+    white-space: nowrap;
+  }
+
+  .ArticleToolMobile {
+    position: relative;
+    margin-top: 32px;
+    @media (min-width: 1200px) {
+      display: none;
+    }
+  }
+  .ArticleTool {
+    display: none;
+    position: absolute;
+    top: 200px;
+    left: -80px;
+    @media (min-width: 1200px) {
+      display: flex;
+    }
+  }
+}

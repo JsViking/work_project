@@ -1,0 +1,79 @@
+.galleryWrapper {
+  position: relative;
+}
+
+.GalleryThumb {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  bottom: 55px;
+  @media (min-width: 1000px) {
+    position: relative;
+    margin-top: 8px;
+    bottom: 0;
+  }
+  .swiperThumb {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.Gallery {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  margin-bottom: 80px;
+  @media (min-width: 1000px) {
+    margin-bottom: 0;
+  }
+  .swiper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .swiperButton {
+    position: absolute;
+    bottom: -80px;
+    height: 40px;
+    z-index: 100;
+    @media (min-width: 1000px) {
+      bottom: 24px;
+    }
+    &.prev {
+      left: 0;
+      cursor: pointer;
+      @media (min-width: 1000px) {
+        left: 16px;
+      }
+    }
+    &.next {
+      right: 0;
+      transform: rotate(180deg);
+      cursor: pointer;
+      @media (min-width: 1000px) {
+        right: 16px;
+      }
+    }
+    // &:hover {
+    //   svg * {
+    //     fill: var(--color-text-secondary);
+    //   }
+    // }
+  }
+
+  .counter {
+    position: absolute;
+    right: calc(50% - 18px);
+    bottom: -70px;
+    z-index: 100;
+    @media (min-width: 1000px) {
+      bottom: 24px;
+      color: var(--color-font-white);
+    }
+  }
+}

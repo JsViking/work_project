@@ -1,0 +1,19 @@
+.AlphabetColumnLiastPage {
+  position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  .column {
+    position: relative;
+    display: flex;
+    gap: 24px;
+  }
+  .list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+  }
+}

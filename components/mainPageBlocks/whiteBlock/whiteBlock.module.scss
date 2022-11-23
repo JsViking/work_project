@@ -1,0 +1,25 @@
+.WhiteBlock {
+  position: relative;
+  border: 4px var(--color-main-blue) solid;
+  margin: 24px 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  @media (min-width: 1000px) {
+    margin: 0;
+  }
+  .socialBlock {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 14px;
+    svg {
+      path {
+        fill: var(--color-font-grey);
+      }
+    }
+  }
+}

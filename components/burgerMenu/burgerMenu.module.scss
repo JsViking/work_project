@@ -1,0 +1,31 @@
+.BurgerMenu {
+  position: fixed;
+  background-color: var(--color-common-white);
+  top: 76px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: none;
+  flex-direction: column;
+  gap: 40px;
+  padding: 48px 16px;
+  @media (min-width: 1000px) {
+    top: 171px;
+  }
+  &.active {
+    display: flex;
+  }
+  .list {
+    @media (min-width: 1000px) {
+      column-count: 3;
+    }
+    li {
+      position: relative;
+      margin: 16px;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}

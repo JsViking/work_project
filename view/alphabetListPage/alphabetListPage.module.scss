@@ -1,0 +1,30 @@
+.AlphabetListPage {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  .alphabet {
+    position: relative;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .listBlock {
+    position: relative;
+    display: flex;
+    gap: 24px;
+    align-items: baseline;
+  }
+  .list {
+    @media (min-width: 1000px) {
+      column-count: 3;
+    }
+    li {
+      position: relative;
+      margin: 14px;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}

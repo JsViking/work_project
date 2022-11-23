@@ -1,0 +1,31 @@
+.ArticleCover {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 219px;
+  @media (min-width: 700px) {
+    height: 429px;
+  }
+
+  .wrapImage {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    .image {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .descriptions {
+    position: relative;
+    span {
+      white-space: pre-wrap;
+      word-break: break-word;
+      margin-right: 5px;
+    }
+  }
+}

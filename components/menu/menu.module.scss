@@ -1,0 +1,23 @@
+.Menu {
+  position: relative;
+  display: none;
+  border-bottom: 1px var(--color-grey-divider) solid;
+  padding: 30px 27px;
+  @media (min-width: 1000px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .icon {
+    cursor: pointer;
+    path {
+      fill: var(--color-common-black);
+    }
+  }
+  .list {
+    position: relative;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+}

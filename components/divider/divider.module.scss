@@ -1,0 +1,8 @@
+.Divider {
+  position: relative;
+  border-bottom: 1px var(--color-grey-divider) solid;
+  padding-bottom: 24px;
+  &:empty {
+    padding-bottom: 0;
+  }
+}

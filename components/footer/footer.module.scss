@@ -1,0 +1,60 @@
+.Footer {
+  position: relative;
+  background-color: var(--color-common-black);
+  padding: 96px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+  @media (min-width: 1000px) {
+    padding: 120px 96px;
+  }
+  .footerBlock {
+    position: relative;
+    display: grid;
+    gap: 40px;
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+      @media (min-width: 1000px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+    }
+    &.info {
+      @media (min-width: 1000px) {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+  }
+  .socialBlock {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    margin-top: 48px;
+    .cosialLinks {
+      position: relative;
+      display: flex;
+      gap: 19px;
+    }
+  }
+  .infoBlock {
+    position: relative;
+    position: relative;
+    display: grid;
+    gap: 8px;
+    height: fit-content;
+  }
+}
+
+.Block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  .linkList {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
